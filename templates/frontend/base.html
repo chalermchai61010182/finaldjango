@@ -1,0 +1,135 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+
+</head>
+<body>
+    <!-- Image and text -->
+    <div class="container">
+
+<nav class="navbar navbar-expand-md navbar-white bg-white">
+
+  <a class="nav-item" href="{% url 'index' %}" >   
+    <img src="static/image/mn.png"  class="d-inline-block align-top" alt="" loading="lazy">    
+    
+  </a>
+  
+  
+      
+
+      <ul class="nav justify-content-center">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}" style="color:rgb(0, 0, 0)">ABOUT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}" style="color:rgb(0, 0, 0)">CONTACT</a>
+        </li>
+
+  
+        <li class="nav-item">
+            <a class="nav-item" href="{% url 'index' %}" >   
+            <img src="static/image/56.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">    
+          </a>
+        </li>
+      </ul> 
+      </dav>   
+</nav></div>
+<div class="container">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" style="color:black">_______________________________________________________________________________________________________________________________________________________________</a>
+    </li>
+</ul> 
+
+
+</div>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer " >
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">_______________________________________________________________________________________________________________________________________________________________</a>
+          </li>
+      </ul> 
+      
+      
+      </div>
+      <div style="text-align:center; padding-top: 45px; margin-top:20px;">Website delicious italiann by Chalermchai supap</div>
+      </dav> 
+      
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+      </ul> 
+      </dav> 
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+      </ul> 
+      </dav>
+
+      <div class="container">
+        <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-item" href="https://www.facebook.com/AofAdafe" >   
+            <img src="static/image/f.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">    
+          </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+        
+        </li>
+        <li class="nav-item">
+          <a class="nav-item" href="https://line.me/ti/p/E2CeiDP0" >   
+            <img src="static/image/l.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">    
+          </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-item" href="https://instagram.com/ofchalermchai?igshid=w7kqter1nvi5" >   
+            <img src="static/image/ig.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">    
+          </a>
+        </li>
+      </ul> 
+      </dav> 
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+      </ul> 
+      </dav> 
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black">  </a>
+          </li>
+      </ul> 
+      </dav> 
+     
+      
+    </footer>
+    <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>
+    <script src="{% static './lib/popper/popper.min.js' %}"></script>
+    <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
