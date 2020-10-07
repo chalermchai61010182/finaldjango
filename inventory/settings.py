@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'stockdbof',
+        'NAME': 'stockdb',
         'USER' : 'root',
         'PASSWORD' : '',
-        'HOST': 'localhost',
-        'POST': '3306',
+        'HOST': '192.168.64.2',
+        'PORT': '3306',
     }
 }
 
